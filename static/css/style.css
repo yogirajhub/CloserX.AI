@@ -1,0 +1,90 @@
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+header h1 {
+    color: #2c3e50;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.question-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #2980b9;
+}
+/* Footer Styles */
+        /* footer {
+            margin-top: 40px;
+            padding: 25px 0;
+            background-color: #ffffff;
+            border-top: 1px solid #e1e8ed;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .footer-container p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        .footer-subtext {
+            font-size: 0.8em !important;
+            color: #7f8c8d !important;
+        }
+
+
+         */
+
+body {
+    display: flex; flex-direction: column; min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; margin: 0; padding: 0; color: #333;
+}
+main { flex: 1; padding: 20px; max-width: 900px; margin: 0 auto; width: 100%; box-sizing: border-box; }
+header { text-align: center; padding: 20px 0; }
+header h1 { color: #2c3e50; margin: 0; }
+.card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;}
+.question-item { border-left: 4px solid #f39c12; background: #fff3cd; padding: 15px; margin-bottom: 10px; border-radius: 4px; }
+textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+button { background-color: #3498db; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px; font-weight: bold;}
+button:hover { background-color: #2980b9; }
+
+/* Call History Details */
+details { margin-top: 10px; cursor: pointer;}
+summary { color: #2980b9; font-weight: bold; outline: none; }
+pre { background: #fff; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9em; white-space: pre-wrap; font-family: inherit;}
+
+/* Footer */
+footer { margin-top: auto; padding: 25px 0; background-color: #ffffff; border-top: 1px solid #e1e8ed; text-align: center; color: #2c3e50; width: 100%; }
+.footer-container p { margin: 5px 0; font-size: 0.95em; }
+.footer-subtext { font-size: 0.8em !important; color: #7f8c8d !important; }
+

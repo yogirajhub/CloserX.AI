@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloserX.AI Dashboard</title>
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23000'/><circle cx='50' cy='50' r='25' fill='none' stroke='%2300ffcc' stroke-width='8' stroke-dasharray='20 10'/><circle cx='50' cy='50' r='10' fill='%2300ffcc'/></svg>">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header><h1>CloserX.AI Dashboard</h1></header>
+    <main>
+        <section class="card">
+            <h2>🧠 Train AI Agent (Upload Document)</h2>
+            <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+                <input type="file" id="doc-file" accept=".txt,.pdf" style="border: 1px solid #ddd; padding: 5px; flex: 1; border-radius: 4px;">
+                <button onclick="uploadDocument()" style="background: #27ae60;">Learn Document</button>
+            </div>
+            <p id="upload-status" style="margin-top: 10px; font-size: 0.9em;"></p>
+        </section>
+
+        <section class="card">
+            <h2>📞 Make Call</h2>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="target-phone" placeholder="+919876543210 (with country code)" style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <button onclick="initiateCall()">Call User</button>
+            </div>
+            <p id="call-status" style="font-size: 0.9em; margin-top: 10px; font-weight: bold;"></p>
+        </section>
+
+        <section class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>⚠️ Unanswered Questions</h2>
+                <button onclick="fetchQuestions()">Refresh List</button>
+            </div>
+            <div id="questions-list" style="margin-top: 15px;"></div>
+        </section>
+
+        <section class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>📜 Recent Call Summaries</h2>
+                <button onclick="fetchCallHistory()" style="background: #7f8c8d;">Refresh</button>
+            </div>
+            <div id="call-history-list" style="margin-top: 15px; max-height: 400px; overflow-y: auto;"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p><strong>CloserX AI</strong> &copy; 2026. All rights reserved.</p>
+            <p class="footer-subtext">Powered by Twilio, Groq LLM & FastAPI</p>
+        </div>
+    </footer>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
